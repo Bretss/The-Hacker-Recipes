@@ -24,7 +24,7 @@ RUN npm run docs:build
 
 
 # This container is used to self-host the website via an nginx-unprivileged container.
-FROM nginxinc/nginx-unprivileged:stable-alpine AS runtime
+FROM nginxinc/nginx-unprivileged:alpine3.24-perl AS runtime
 
 LABEL org.opencontainers.image.title="The Hacker Recipes" \
       org.opencontainers.image.description="The Hacker Recipes self-hosted static website" \
